@@ -9,15 +9,16 @@ import numpy as np
 import scipy
 import scipy.misc
 import scipy.cluster
+import matplotlib.cm as cm
 from PIL import Image
 NUM_CLUSTERS = 5
 
 
 if __name__ == '__main__':
-    im = Image.open("D:\Workspace\Pycharm\SOFT\ptica.png")
-    color = max(im.getcolors(im.size[0] * im.size[1]))
+    im = cv2.imread("D:\Workspace\Pycharm\SOFT\ptica.jpg")
+    im = cv2.cvtColor(im,cv2.COLOR_BGR2RGB)
+    cv2.imshow('img',im)
 
-    '''
     print('reading image')
     im = cv2.imread('D:\Workspace\Pycharm\SOFT\ptica.jpg')
     ar = np.asarray(im)
@@ -34,15 +35,17 @@ if __name__ == '__main__':
     index_max = scipy.argmax(counts)  # find most frequent
     peak = codes[index_max]
     colour = ''.join(chr(int(c)) for c in peak)
-    #print('most frequent is %s (#%s)' % (peak, colour.encode('hex')))
+    print('most frequent is %s' % (codes))
    # colors = dict(mcolors.BASE_COLORS,**mcolors.CSS4_COLORS)
 
-    '''
+
+
     n = Image.open('D:\Workspace\Pycharm\SOFT\ptica.jpg')
     n = n.resize((300, 300),Image.ANTIALIAS)
 
     m = n.load()
-
+    b, g, r = n.split()
+    n = Image.merge("RGB", (r, g, b))
     # get x,y size
     s = n.size
 
@@ -53,11 +56,10 @@ if __name__ == '__main__':
             ####################################################################
             # Do your logic here and create a new (R,G,B) tuple called new_color
             ####################################################################
-            if current_color == color:
-                n.putpixel((x, y), (255,0,0))
-
+            if int(current_color[0]) == int(peak[0]) and int(current_color[1]) == int(peak[1]) and int(current_color[2]) == int(peak[2]):
+                n.putpixel((x, y), (0,0,0))
+    ''''''
     n.save('sans_red.jpg', "JPEG")
     img = cv2.imread('D:\Workspace\Pycharm\SOFT\sans_red.jpg')
-    cv2.imshow('img',img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
