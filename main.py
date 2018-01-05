@@ -13,31 +13,8 @@ NUM_CLUSTERS = 5
 
 
 if __name__ == '__main__':
-    im = Image.open("D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\ptica.png")
-    color = max(im.getcolors(im.size[0] * im.size[1]))
 
-
-    print('reading image')
-    im = cv2.imread('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\ptica.jpg')
-    '''
-    ar = np.asarray(im)
-    shape = ar.shape
-    ar = ar.reshape(scipy.product(shape[:2]), shape[2]).astype(float)
-
-    print('finding clusters')
-    codes, dist = scipy.cluster.vq.kmeans(ar, NUM_CLUSTERS)
-    #print('cluster centres:\n', codes)
-
-    vecs, dist = scipy.cluster.vq.vq(ar, codes)  # assign codes
-    counts, bins = scipy.histogram(vecs, len(codes))  # count occurrences
-
-    index_max = scipy.argmax(counts)  # find most frequent
-    peak = codes[index_max]
-    colour = ''.join(chr(int(c)) for c in peak)
-    #print('most frequent is %s (#%s)' % (peak, colour.encode('hex')))
-   # colors = dict(mcolors.BASE_COLORS,**mcolors.CSS4_COLORS)
-   '''
-    image = cv2.imread("D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\ptica.jpg")
+    image = cv2.imread("D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\\1.jpg")
     (h, w) = image.shape[:2]
 
     # convert the image from the RGB color space to the L*a*b*
@@ -53,7 +30,7 @@ if __name__ == '__main__':
 
     # apply k-means using the specified number of clusters and
     # then create the quantized image based on the predictions
-    clt = MiniBatchKMeans(n_clusters=18)
+    clt = MiniBatchKMeans(n_clusters=8)
     labels = clt.fit_predict(image)
     quant = clt.cluster_centers_.astype("uint8")[labels]
 
@@ -65,42 +42,29 @@ if __name__ == '__main__':
     quant = cv2.cvtColor(quant, cv2.COLOR_LAB2BGR)
     image = cv2.cvtColor(image, cv2.COLOR_LAB2BGR)
 
-    cv2.imwrite('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\sans_red.jpg', np.hstack([quant]))
-    cv2.imshow('fd',np.hstack([quant]))
-    im =Image.open('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\sans_red.jpg')
+    cv2.imshow("image", np.hstack([image, quant]))
 
-    pixels = im.getcolors(w*h)
-    most_frequent_pixel = pixels[0]
+    cv2.imwrite('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\sans_red.jpg', np.hstack([quant]))
+
+    im =Image.open('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\sans_red.jpg')
+    im = im.resize((128, 128),Image.ANTIALIAS)
+    s = im.size
+    pixels = im.getcolors(s[0]*s[1])
     pixels = sorted(pixels, key=itemgetter(0))
 
-    colors_for_remove = pixels[-6:-1]
-    print(colors_for_remove)
-    for count, colour in pixels:
-        if count > most_frequent_pixel[0]:
-            most_frequent_pixel = (count, colour)
+    colors_for_remove = pixels[-10:]
+    print(colors_for_remove[-1])
 
-    print(most_frequent_pixel[0])
-
-    '''
-    n = Image.open('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\ptica.png')
-    n = n.resize((300, 300),Image.ANTIALIAS)
-
-    m = n.load()
-
-    # get x,y size
-    '''
-    # Process every pixel
-    im =  im.resize((300, 300),Image.ANTIALIAS)
-    s = im.size
-
+    m = im.load()
     for x in range(s[0]):
         for y in range(s[1]):
             current_color = im.getpixel((x, y))
-            if current_color == colors_for_remove[0][1] or current_color == colors_for_remove[1][1] or \
-                current_color == colors_for_remove[2][1] or current_color == colors_for_remove[3][1]:
-                im.putpixel((x, y), (0,0,0))
+            for color in colors_for_remove:
+                if current_color == color[1]:
+                    print("usao")
+                    im.putpixel((x, y), (0,0,0))
 
-    im.save('sans_red.jpg', "JPEG")
+    cv2.imwrite('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\sans_red.jpg', np.array(im))
     img = cv2.imread('D:\SIIT\IV godina\VII semestar\Soft kompjuting\projekat\\recognition-of-birds\sans_red.jpg')
     cv2.imshow('img',img)
 
