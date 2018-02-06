@@ -31,10 +31,10 @@ if __name__ == '__main__':
     # print(lab_matrix)
 
     # Read image
-    im = cv2.imread("D:\Workspace\Pycharm\SOFT\pictures\p15.jpg", cv2.IMREAD_GRAYSCALE)
+    im = cv2.imread("D:\Workspace\Pycharm\SOFT\pictures\p1_seq.jpg", cv2.IMREAD_GRAYSCALE)
     #edges = cv2.Canny(im, 150,150)
     blurred = cv2.GaussianBlur(im, (3, 3), 0)
-    edges = cv2.Canny(blurred,200,100)
+    edges = cv2.Canny(blurred,200,200)
     #x, y, w, h = cv2.boundingRect(c)
     # draw the book contour (in green)
     #cv2.rectangle(edges, (x, y), (x + w, y + h), (0, 255, 0), 2)
