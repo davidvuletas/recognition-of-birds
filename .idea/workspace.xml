@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/rgb_find_nearest.py" line="882" />
-    <bookmark url="file://$PROJECT_DIR$/rgb_find_nearest.py" line="899" />
     <bookmark url="file://$PROJECT_DIR$/printColors.py" line="34" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a20e7a3-9d40-43f0-a764-3dd5253e186f" name="Default" comment="Merge branch 'master' of https://github.com/davidvuletas/recognition-of-birds&#10;&#10;# Conflicts:&#10;#&#9;main.py">
-      <change beforePath="" afterPath="$PROJECT_DIR$/blocks.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/build/temp.win-amd64-3.6/Release/ch_cl.cp36-win_amd64.def" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/build/temp.win-amd64-3.6/Release/ch_cl.o" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/ch_cl.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/ch_cl.cp36-win_amd64.pyd" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/ch_cl.pyx" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/cython_code/setup.py" />
+    <list default="true" id="1a20e7a3-9d40-43f0-a764-3dd5253e186f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/detect colour.py" afterPath="$PROJECT_DIR$/detect colour.py" />
-      <change beforePath="$PROJECT_DIR$/pictures/p2_seq.jpg" afterPath="$PROJECT_DIR$/pictures/p2_seq.jpg" />
-      <change beforePath="$PROJECT_DIR$/randomChina.py" afterPath="$PROJECT_DIR$/randomChina.py" />
+      <change beforePath="$PROJECT_DIR$/blocks.py" afterPath="$PROJECT_DIR$/blocks.py" />
+      <change beforePath="$PROJECT_DIR$/cython_code/build/temp.win-amd64-3.6/Release/ch_cl.o" afterPath="$PROJECT_DIR$/cython_code/build/temp.win-amd64-3.6/Release/ch_cl.o" />
+      <change beforePath="$PROJECT_DIR$/cython_code/ch_cl.c" afterPath="$PROJECT_DIR$/cython_code/ch_cl.c" />
+      <change beforePath="$PROJECT_DIR$/cython_code/ch_cl.cp36-win_amd64.pyd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/cython_code/ch_cl.pyx" afterPath="$PROJECT_DIR$/cython_code/ch_cl.pyx" />
+      <change beforePath="$PROJECT_DIR$/cython_code/setup.py" afterPath="$PROJECT_DIR$/cython_code/setup.py" />
+      <change beforePath="$PROJECT_DIR$/pictures/p1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p10.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p11.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p12.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p13.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p14.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p15.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p2_seq.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p6.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p7.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/p8.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/pictures/pp.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/rgb_find_nearest.py" afterPath="$PROJECT_DIR$/rgb_find_nearest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,28 +43,53 @@
     <SUITE FILE_PATH="coverage/SOFT$main.coverage" NAME="main Coverage Results" MODIFIED="1515167580517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SOFT$detect_colour.coverage" NAME="detect colour Coverage Results" MODIFIED="1515437310312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SOFT$printColors.coverage" NAME="printColors Coverage Results" MODIFIED="1515252868528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SOFT$blocks.coverage" NAME="blocks Coverage Results" MODIFIED="1515785835089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SOFT$blocks.coverage" NAME="blocks Coverage Results" MODIFIED="1518085799999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SOFT$randomChina.coverage" NAME="randomChina Coverage Results" MODIFIED="1515426133532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SOFT$SOFT.coverage" NAME="SOFT Coverage Results" MODIFIED="1515757409239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="p2.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pictures/p2.jpg">
+      <file leaf-file-name="blocks.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blocks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="174" column="26" lean-forward="false" selection-start-line="174" selection-start-column="26" selection-end-line="174" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#473#497#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rgb_find_nearest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rgb_find_nearest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Groove_Billed_Ani_0046_1663.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0046_1663.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blocks.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blocks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="137" column="17" lean-forward="false" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="Groove_Billed_Ani_0015_1653.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0015_1653.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Groove_Billed_Ani_0018_1613.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0018_1613.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -89,6 +123,9 @@
       <find>66.76</find>
       <find>darks</find>
       <find>print</find>
+      <find>#CD81</find>
+      <find>79</find>
+      <find>SteelBlue</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -113,12 +150,14 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/find_rgb.pyx.py" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa9624.3237/fast-for-loops/Fast For Loops.ipynb" />
-        <option value="$PROJECT_DIR$/rgb_find_nearest.py" />
         <option value="$PROJECT_DIR$/ch_cl.pxd" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$USER_HOME$/Documents/fast-for-loops/fast-for-loops/.ipynb_checkpoints/Fast For Loops-checkpoint.ipynb" />
         <option value="$PROJECT_DIR$/ch_cl.pyx" />
         <option value="$PROJECT_DIR$/cython_code/__init__.py" />
+        <option value="$PROJECT_DIR$/cython_code/setup.py" />
+        <option value="$PROJECT_DIR$/cython_code/ch_cl.pyx" />
+        <option value="$PROJECT_DIR$/rgb_find_nearest.py" />
         <option value="$PROJECT_DIR$/blocks.py" />
       </list>
     </option>
@@ -170,7 +209,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -179,27 +217,34 @@
               <item name="SOFT" type="b2602c69:ProjectViewProjectNode" />
               <item name="SOFT" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SOFT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SOFT" type="462c0819:PsiDirectoryNode" />
+              <item name="pictures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Pycharm\SOFT\cython_code" />
       <recent name="D:\Workspace\Pycharm\SOFT\cython" />
       <recent name="D:\Workspace\Pycharm\SOFT\colors" />
       <recent name="D:\Workspace\Pycharm\SOFT" />
       <recent name="D:\Workspace\Pycharm\SOFT\pictures" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspace\Pycharm\SOFT" />
       <recent name="D:\Workspace\Pycharm\SOFT\pictures" />
+      <recent name="D:\Workspace\Pycharm\SOFT" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -413,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515413437925</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added a few changes in code with jython">
+      <created>1517911011462</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1517911011462</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -424,12 +476,13 @@
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="354" height="676" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5071708" sideWeight="0.6275" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33767927" sideWeight="0.6275" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.4825" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.374375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.325" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.301875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.365625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39895698" sideWeight="0.465" order="3" side_tool="false" content_ui="tabs" />
@@ -439,7 +492,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985657" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -455,15 +507,36 @@
     <MESSAGE value="Added picture folder" />
     <MESSAGE value="workspace.xml" />
     <MESSAGE value="Merge branch 'master' of https://github.com/davidvuletas/recognition-of-birds&#10;&#10;# Conflicts:&#10;#&#9;main.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/davidvuletas/recognition-of-birds&#10;&#10;# Conflicts:&#10;#&#9;main.py" />
+    <MESSAGE value="Added a few changes in code with jython" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a few changes in code with jython" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/blocks.py</url>
-          <line>155</line>
-          <option name="timeStamp" value="51" />
+          <line>23</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/blocks.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/blocks.py</url>
+          <line>118</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/blocks.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/blocks.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -473,7 +546,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="52" />
+      <option name="time" value="65" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -487,286 +560,326 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>int(a)</expression-string>
+        <expression-string>block</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>img[x][y]</expression-string>
+        <expression-string>len(all_blocks[0][1])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>int(a),int(b),int(c)</expression-string>
+        <expression-string>len(all_blocks[1][1])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>img</expression-string>
+        <expression-string>len(all_blocks[2][1])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(all_blocks[3][1])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(all_blocks[3][0])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(all_blocks[2][0])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(all_blocks[1][0])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(all_blocks[0][0])</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pictures/p11_seq.jpg" />
-    <entry file="file://$PROJECT_DIR$/pictures/p12_seq.jpg" />
-    <entry file="file://$PROJECT_DIR$/pictures/p13_seq.jpg" />
-    <entry file="file://$PROJECT_DIR$/pictures/p14_seq.jpg" />
-    <entry file="file://$PROJECT_DIR$/pictures/p15_seq.jpg" />
-    <entry file="file://$PROJECT_DIR$/pictures/pp_seq.jpg" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1099610508/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="4167" column="8" lean-forward="false" selection-start-line="4167" selection-start-column="8" selection-end-line="4167" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p8.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/001.Black_footed_Albatross/Black_Footed_Albatross_0047_796064.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p12.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/001.Black_footed_Albatross/Black_Footed_Albatross_0033_796086.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p13.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/001.Black_footed_Albatross/Black_Footed_Albatross_0002_55.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p14.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/002.Laysan_Albatross/Laysan_Albatross_0002_1027.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p15.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/002.Laysan_Albatross/Laysan_Albatross_0003_1033.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://D:/Programi/Anaconda/envs/untitled/Lib/site-packages/numpy/lib/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="5099" column="4" lean-forward="false" selection-start-line="5099" selection-start-column="4" selection-end-line="5099" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programi/Anaconda/envs/untitled/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programi/Anaconda/envs/untitled/Lib/site-packages/numpy/lib/shape_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="439" column="0" lean-forward="false" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programi/Anaconda/envs/untitled/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="967" column="59" lean-forward="false" selection-start-line="967" selection-start-column="55" selection-end-line="967" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/pp.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/002.Laysan_Albatross/Laysan_Albatross_0004_930.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p1.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/002.Laysan_Albatross/Laysan_Albatross_0012_696.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p2.bmp" />
-    <entry file="file://$PROJECT_DIR$/pictures/p2_seq.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://D:/Programi/Anaconda/envs/untitled/Lib/site-packages/colormath/color_diff_matrix.py">
+    <entry file="file://$PROJECT_DIR$/cython_code/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-960">
-          <caret line="58" column="4" lean-forward="false" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p11.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1099610508/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6123" column="4" lean-forward="false" selection-start-line="6123" selection-start-column="4" selection-end-line="6123" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="63" column="48" lean-forward="false" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colors/lab_matrix.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="989" column="7" lean-forward="true" selection-start-line="989" selection-start-column="0" selection-end-line="990" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colors/lab-colors.pk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1584" column="2" lean-forward="false" selection-start-line="1584" selection-start-column="2" selection-end-line="1584" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/randomChina.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="36" column="38" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="36" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programi/Anaconda/envs/untitled/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="1199" column="8" lean-forward="false" selection-start-line="1199" selection-start-column="8" selection-end-line="1199" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/find_rgb.html" />
-    <entry file="file://$PROJECT_DIR$/find_rgb.c" />
-    <entry file="file://$PROJECT_DIR$/find_rgb.pyx" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa9624.3237/fast-for-loops/Fast For Loops.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/printColors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p6.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_import_hook.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch_cl.cp36-win_amd64.pyd" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydev_run_in_console.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch_cl.pxd" />
-    <entry file="file://$PROJECT_DIR$/ch_cl.c" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rgb_find_nearest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="894" column="21" lean-forward="false" selection-start-line="894" selection-start-column="21" selection-end-line="894" selection-end-column="21" />
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#15#0" expanded="false" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/fast-for-loops/fast-for-loops/.ipynb_checkpoints/Fast For Loops-checkpoint.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pictures/p2.jpg">
+    <entry file="file://$PROJECT_DIR$/pictures/002.Laysan_Albatross/Laysan_Albatross_0033_658.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/detect colour.py">
+    <entry file="file://$PROJECT_DIR$/pictures/002.Laysan_Albatross/Laysan_Albatross_0001_545.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0001_1071.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0006_796390.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0025_796361.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0030_1122.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0032_1149.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0034_1154.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0041_796364.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0010_796355.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0013_796402.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0016_1075.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0017_796349.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0024_1161.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0046_1211.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0045_1162.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0005_796342.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0014_796373.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0076_796365.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0077_1080.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0075_796352.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0063_1101.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0043_1076.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0031_1066.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0029_796357.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0023_796401.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0079_796389.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/003.Sooty_Albatross/Sooty_Albatross_0019_796391.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0018_1613.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0002_1670.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0004_1528.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0005_1750.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0006_1763.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0007_1615.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0009_1522.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0010_1704.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cython_code/ch_cl.cp36-win_amd64.pyd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="41" column="35" lean-forward="false" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cython_code/ch_cl.pyx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="16" column="76" lean-forward="false" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding>
-            <element signature="e#0#13#0" expanded="false" />
+            <element signature="e#1#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cython_code/setup.py">
+    <entry file="file://$PROJECT_DIR$/rgb_find_nearest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cython_code/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0044_1731.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0046_1663.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pictures/004.Groove_billed_Ani/Groove_Billed_Ani_0015_1653.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="137" column="17" lean-forward="false" selection-start-line="137" selection-start-column="17" selection-end-line="137" selection-end-column="17" />
+        <state relative-caret-position="521">
+          <caret line="174" column="26" lean-forward="false" selection-start-line="174" selection-start-column="26" selection-end-line="174" selection-end-column="26" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#473#497#0" expanded="false" />
           </folding>
         </state>
       </provider>

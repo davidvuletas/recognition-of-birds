@@ -4,12 +4,12 @@
 {
     "distutils": {
         "depends": [],
-        "name": "ch_cl",
+        "name": "cython_code.ch_cl",
         "sources": [
             "ch_cl.pyx"
         ]
     },
-    "module_name": "ch_cl"
+    "module_name": "cython_code.ch_cl"
 }
 END: Cython Metadata */
 
@@ -490,8 +490,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__ch_cl
-#define __PYX_HAVE_API__ch_cl
+#define __PYX_HAVE__cython_code__ch_cl
+#define __PYX_HAVE_API__cython_code__ch_cl
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -1036,8 +1036,8 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors;
-struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr;
+struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors;
+struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
@@ -1079,29 +1079,29 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "ch_cl.pyx":8
+/* "cython_code/ch_cl.pyx":8
  * 
  * @cython.boundscheck(False)
  * def newcolors(unsigned char [:,:,:] image):             # <<<<<<<<<<<<<<
  *     #it1 = np.nditer(img, flags=['multi_index'])
  *     cdef int x, y, w, h
  */
-struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors {
+struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors {
   PyObject_HEAD
   PyObject *__pyx_v_hex;
 };
 
 
-/* "ch_cl.pyx":20
- *             hex = ColorNames.WebColorMap[co]
+/* "cython_code/ch_cl.pyx":20
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))             # <<<<<<<<<<<<<<
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
  *     return narr
  */
-struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr {
+struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr {
   PyObject_HEAD
-  struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *__pyx_outer_scope;
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *__pyx_outer_scope;
   PyObject *__pyx_v_i;
   PyObject *__pyx_t_0;
   Py_ssize_t __pyx_t_1;
@@ -2012,9 +2012,9 @@ static PyTypeObject *__pyx_ptype_5numpy_ndarray = 0;
 static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, char *, char *, int *); /*proto*/
 
-/* Module declarations from 'ch_cl' */
-static PyTypeObject *__pyx_ptype_5ch_cl___pyx_scope_struct__newcolors = 0;
-static PyTypeObject *__pyx_ptype_5ch_cl___pyx_scope_struct_1_genexpr = 0;
+/* Module declarations from 'cython_code.ch_cl' */
+static PyTypeObject *__pyx_ptype_11cython_code_5ch_cl___pyx_scope_struct__newcolors = 0;
+static PyTypeObject *__pyx_ptype_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2060,10 +2060,10 @@ static void __pyx_memoryview_slice_assign_scalar(__Pyx_memviewslice *, int, size
 static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize_t *, int, size_t, void *); /*proto*/
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_unsigned_char = { "unsigned char", NULL, sizeof(unsigned char), { 0 }, 0, IS_UNSIGNED(unsigned char) ? 'U' : 'I', IS_UNSIGNED(unsigned char), 0 };
-#define __Pyx_MODULE_NAME "ch_cl"
-int __pyx_module_is_main_ch_cl = 0;
+#define __Pyx_MODULE_NAME "cython_code.ch_cl"
+int __pyx_module_is_main_cython_code__ch_cl = 0;
 
-/* Implementation of 'ch_cl' */
+/* Implementation of 'cython_code.ch_cl' */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_RuntimeError;
@@ -2102,7 +2102,7 @@ static const char __pyx_k_step[] = "step";
 static const char __pyx_k_stop[] = "stop";
 static const char __pyx_k_test[] = "__test__";
 static const char __pyx_k_ASCII[] = "ASCII";
-static const char __pyx_k_ch_cl[] = "ch_cl";
+static const char __pyx_k_Color[] = "Color";
 static const char __pyx_k_class[] = "__class__";
 static const char __pyx_k_close[] = "close";
 static const char __pyx_k_error[] = "error";
@@ -2145,7 +2145,6 @@ static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
 static const char __pyx_k_ImportError[] = "ImportError";
 static const char __pyx_k_MemoryError[] = "MemoryError";
 static const char __pyx_k_PickleError[] = "PickleError";
-static const char __pyx_k_WebColorMap[] = "WebColorMap";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
 static const char __pyx_k_stringsource[] = "stringsource";
@@ -2157,15 +2156,16 @@ static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
 static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
 static const char __pyx_k_rgb_find_nearest[] = "rgb_find_nearest";
+static const char __pyx_k_cython_code_ch_cl[] = "cython_code.ch_cl";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
+static const char __pyx_k_findNearestColorName[] = "findNearestColorName";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
 static const char __pyx_k_MemoryView_of_r_at_0x_x[] = "<MemoryView of %r at 0x%x>";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
-static const char __pyx_k_findNearestWebColorName[] = "findNearestWebColorName";
 static const char __pyx_k_Cannot_index_with_type_s[] = "Cannot index with type '%s'";
 static const char __pyx_k_newcolors_locals_genexpr[] = "newcolors.<locals>.genexpr";
 static const char __pyx_k_Invalid_shape_in_axis_d_d[] = "Invalid shape in axis %d: %d.";
@@ -2195,6 +2195,7 @@ static PyObject *__pyx_n_s_ASCII;
 static PyObject *__pyx_kp_s_Buffer_view_does_not_expose_stri;
 static PyObject *__pyx_kp_s_Can_only_create_a_buffer_that_is;
 static PyObject *__pyx_kp_s_Cannot_index_with_type_s;
+static PyObject *__pyx_n_s_Color;
 static PyObject *__pyx_n_s_ColorNames;
 static PyObject *__pyx_n_s_Ellipsis;
 static PyObject *__pyx_kp_s_Empty_shape_tuple_for_cython_arr;
@@ -2218,14 +2219,12 @@ static PyObject *__pyx_n_s_TypeError;
 static PyObject *__pyx_kp_s_Unable_to_convert_item_to_object;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_View_MemoryView;
-static PyObject *__pyx_n_s_WebColorMap;
 static PyObject *__pyx_n_s_allocate_buffer;
 static PyObject *__pyx_n_s_args;
 static PyObject *__pyx_n_s_asarray;
 static PyObject *__pyx_n_s_base;
 static PyObject *__pyx_n_s_c;
 static PyObject *__pyx_n_u_c;
-static PyObject *__pyx_n_s_ch_cl;
 static PyObject *__pyx_kp_s_ch_cl_pyx;
 static PyObject *__pyx_n_s_class;
 static PyObject *__pyx_n_s_cline_in_traceback;
@@ -2233,12 +2232,13 @@ static PyObject *__pyx_n_s_close;
 static PyObject *__pyx_n_s_co;
 static PyObject *__pyx_kp_s_contiguous_and_direct;
 static PyObject *__pyx_kp_s_contiguous_and_indirect;
+static PyObject *__pyx_n_s_cython_code_ch_cl;
 static PyObject *__pyx_n_s_dict;
 static PyObject *__pyx_n_s_dtype_is_object;
 static PyObject *__pyx_n_s_encode;
 static PyObject *__pyx_n_s_enumerate;
 static PyObject *__pyx_n_s_error;
-static PyObject *__pyx_n_s_findNearestWebColorName;
+static PyObject *__pyx_n_s_findNearestColorName;
 static PyObject *__pyx_n_s_flags;
 static PyObject *__pyx_n_s_format;
 static PyObject *__pyx_n_s_fortran;
@@ -2310,8 +2310,8 @@ static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_s_w;
 static PyObject *__pyx_n_s_x;
 static PyObject *__pyx_n_s_y;
-static PyObject *__pyx_pf_5ch_cl_9newcolors_genexpr(PyObject *__pyx_self); /* proto */
-static PyObject *__pyx_pf_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_image); /* proto */
+static PyObject *__pyx_pf_11cython_code_5ch_cl_9newcolors_genexpr(PyObject *__pyx_self); /* proto */
+static PyObject *__pyx_pf_11cython_code_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_image); /* proto */
 static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_self, Py_buffer *__pyx_v_info); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
@@ -2356,8 +2356,8 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_5ch_cl___pyx_scope_struct__newcolors(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_5ch_cl___pyx_scope_struct_1_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct__newcolors(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -2409,7 +2409,7 @@ static PyObject *__pyx_tuple__38;
 static PyObject *__pyx_codeobj__32;
 static PyObject *__pyx_codeobj__39;
 
-/* "ch_cl.pyx":8
+/* "cython_code/ch_cl.pyx":8
  * 
  * @cython.boundscheck(False)
  * def newcolors(unsigned char [:,:,:] image):             # <<<<<<<<<<<<<<
@@ -2418,9 +2418,9 @@ static PyObject *__pyx_codeobj__39;
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5ch_cl_1newcolors(PyObject *__pyx_self, PyObject *__pyx_arg_image); /*proto*/
-static PyMethodDef __pyx_mdef_5ch_cl_1newcolors = {"newcolors", (PyCFunction)__pyx_pw_5ch_cl_1newcolors, METH_O, 0};
-static PyObject *__pyx_pw_5ch_cl_1newcolors(PyObject *__pyx_self, PyObject *__pyx_arg_image) {
+static PyObject *__pyx_pw_11cython_code_5ch_cl_1newcolors(PyObject *__pyx_self, PyObject *__pyx_arg_image); /*proto*/
+static PyMethodDef __pyx_mdef_11cython_code_5ch_cl_1newcolors = {"newcolors", (PyCFunction)__pyx_pw_11cython_code_5ch_cl_1newcolors, METH_O, 0};
+static PyObject *__pyx_pw_11cython_code_5ch_cl_1newcolors(PyObject *__pyx_self, PyObject *__pyx_arg_image) {
   __Pyx_memviewslice __pyx_v_image = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -2430,44 +2430,44 @@ static PyObject *__pyx_pw_5ch_cl_1newcolors(PyObject *__pyx_self, PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("ch_cl.newcolors", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cython_code.ch_cl.newcolors", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5ch_cl_newcolors(__pyx_self, __pyx_v_image);
+  __pyx_r = __pyx_pf_11cython_code_5ch_cl_newcolors(__pyx_self, __pyx_v_image);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static PyObject *__pyx_gb_5ch_cl_9newcolors_2generator(__pyx_CoroutineObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
+static PyObject *__pyx_gb_11cython_code_5ch_cl_9newcolors_2generator(__pyx_CoroutineObject *__pyx_generator, PyObject *__pyx_sent_value); /* proto */
 
-/* "ch_cl.pyx":20
- *             hex = ColorNames.WebColorMap[co]
+/* "cython_code/ch_cl.pyx":20
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))             # <<<<<<<<<<<<<<
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
  *     return narr
  */
 
-static PyObject *__pyx_pf_5ch_cl_9newcolors_genexpr(PyObject *__pyx_self) {
-  struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *__pyx_cur_scope;
+static PyObject *__pyx_pf_11cython_code_5ch_cl_9newcolors_genexpr(PyObject *__pyx_self) {
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *__pyx_cur_scope;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("genexpr", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)__pyx_tp_new_5ch_cl___pyx_scope_struct_1_genexpr(__pyx_ptype_5ch_cl___pyx_scope_struct_1_genexpr, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)__pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr(__pyx_ptype_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 20, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
-  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *) __pyx_self;
+  __pyx_cur_scope->__pyx_outer_scope = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *) __pyx_self;
   __Pyx_INCREF(((PyObject *)__pyx_cur_scope->__pyx_outer_scope));
   __Pyx_GIVEREF(__pyx_cur_scope->__pyx_outer_scope);
   {
-    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_5ch_cl_9newcolors_2generator, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_newcolors_locals_genexpr, __pyx_n_s_ch_cl); if (unlikely(!gen)) __PYX_ERR(0, 20, __pyx_L1_error)
+    __pyx_CoroutineObject *gen = __Pyx_Generator_New((__pyx_coroutine_body_t) __pyx_gb_11cython_code_5ch_cl_9newcolors_2generator, (PyObject *) __pyx_cur_scope, __pyx_n_s_genexpr, __pyx_n_s_newcolors_locals_genexpr, __pyx_n_s_cython_code_ch_cl); if (unlikely(!gen)) __PYX_ERR(0, 20, __pyx_L1_error)
     __Pyx_DECREF(__pyx_cur_scope);
     __Pyx_RefNannyFinishContext();
     return (PyObject *) gen;
@@ -2475,7 +2475,7 @@ static PyObject *__pyx_pf_5ch_cl_9newcolors_genexpr(PyObject *__pyx_self) {
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("ch_cl.newcolors.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cython_code.ch_cl.newcolors.genexpr", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_DECREF(((PyObject *)__pyx_cur_scope));
   __Pyx_XGIVEREF(__pyx_r);
@@ -2483,9 +2483,9 @@ static PyObject *__pyx_pf_5ch_cl_9newcolors_genexpr(PyObject *__pyx_self) {
   return __pyx_r;
 }
 
-static PyObject *__pyx_gb_5ch_cl_9newcolors_2generator(__pyx_CoroutineObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
+static PyObject *__pyx_gb_11cython_code_5ch_cl_9newcolors_2generator(__pyx_CoroutineObject *__pyx_generator, PyObject *__pyx_sent_value) /* generator body */
 {
-  struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *__pyx_cur_scope = ((struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)__pyx_generator->closure);
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *__pyx_cur_scope = ((struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)__pyx_generator->closure);
   PyObject *__pyx_r = NULL;
   PyObject *__pyx_t_1 = NULL;
   Py_ssize_t __pyx_t_2;
@@ -2568,7 +2568,7 @@ static PyObject *__pyx_gb_5ch_cl_9newcolors_2generator(__pyx_CoroutineObject *__
   return __pyx_r;
 }
 
-/* "ch_cl.pyx":8
+/* "cython_code/ch_cl.pyx":8
  * 
  * @cython.boundscheck(False)
  * def newcolors(unsigned char [:,:,:] image):             # <<<<<<<<<<<<<<
@@ -2576,8 +2576,8 @@ static PyObject *__pyx_gb_5ch_cl_9newcolors_2generator(__pyx_CoroutineObject *__
  *     cdef int x, y, w, h
  */
 
-static PyObject *__pyx_pf_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_image) {
-  struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *__pyx_cur_scope;
+static PyObject *__pyx_pf_11cython_code_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_image) {
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *__pyx_cur_scope;
   int __pyx_v_x;
   int __pyx_v_y;
   int __pyx_v_w;
@@ -2597,17 +2597,19 @@ static PyObject *__pyx_pf_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, _
   int __pyx_t_8;
   int __pyx_t_9;
   __Pyx_memviewslice __pyx_t_10 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  int __pyx_t_11;
+  PyObject *__pyx_t_12 = NULL;
   __Pyx_RefNannySetupContext("newcolors", 0);
-  __pyx_cur_scope = (struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)__pyx_tp_new_5ch_cl___pyx_scope_struct__newcolors(__pyx_ptype_5ch_cl___pyx_scope_struct__newcolors, __pyx_empty_tuple, NULL);
+  __pyx_cur_scope = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)__pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct__newcolors(__pyx_ptype_11cython_code_5ch_cl___pyx_scope_struct__newcolors, __pyx_empty_tuple, NULL);
   if (unlikely(!__pyx_cur_scope)) {
-    __pyx_cur_scope = ((struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)Py_None);
+    __pyx_cur_scope = ((struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)Py_None);
     __Pyx_INCREF(Py_None);
     __PYX_ERR(0, 8, __pyx_L1_error)
   } else {
     __Pyx_GOTREF(__pyx_cur_scope);
   }
 
-  /* "ch_cl.pyx":12
+  /* "cython_code/ch_cl.pyx":12
  *     cdef int x, y, w, h
  *     # grab the image dimensions
  *     h = image.shape[0]             # <<<<<<<<<<<<<<
@@ -2616,7 +2618,7 @@ static PyObject *__pyx_pf_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_h = (__pyx_v_image.shape[0]);
 
-  /* "ch_cl.pyx":13
+  /* "cython_code/ch_cl.pyx":13
  *     # grab the image dimensions
  *     h = image.shape[0]
  *     w = image.shape[1]             # <<<<<<<<<<<<<<
@@ -2625,7 +2627,7 @@ static PyObject *__pyx_pf_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, _
  */
   __pyx_v_w = (__pyx_v_image.shape[1]);
 
-  /* "ch_cl.pyx":14
+  /* "cython_code/ch_cl.pyx":14
  *     h = image.shape[0]
  *     w = image.shape[1]
  *     narr = np.asarray(image)             # <<<<<<<<<<<<<<
@@ -2688,38 +2690,38 @@ static PyObject *__pyx_pf_5ch_cl_newcolors(CYTHON_UNUSED PyObject *__pyx_self, _
   __pyx_v_narr = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "ch_cl.pyx":15
+  /* "cython_code/ch_cl.pyx":15
  *     w = image.shape[1]
  *     narr = np.asarray(image)
  *     for x in range(0,h):             # <<<<<<<<<<<<<<
  *         for y in range(0,w):
- *             co = ColorNames.findNearestWebColorName(image[x,y])
+ *             co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)
  */
   __pyx_t_6 = __pyx_v_h;
   for (__pyx_t_7 = 0; __pyx_t_7 < __pyx_t_6; __pyx_t_7+=1) {
     __pyx_v_x = __pyx_t_7;
 
-    /* "ch_cl.pyx":16
+    /* "cython_code/ch_cl.pyx":16
  *     narr = np.asarray(image)
  *     for x in range(0,h):
  *         for y in range(0,w):             # <<<<<<<<<<<<<<
- *             co = ColorNames.findNearestWebColorName(image[x,y])
- *             hex = ColorNames.WebColorMap[co]
+ *             co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)
+ *             hex = ColorNames.Color[co]
  */
     __pyx_t_8 = __pyx_v_w;
     for (__pyx_t_9 = 0; __pyx_t_9 < __pyx_t_8; __pyx_t_9+=1) {
       __pyx_v_y = __pyx_t_9;
 
-      /* "ch_cl.pyx":17
+      /* "cython_code/ch_cl.pyx":17
  *     for x in range(0,h):
  *         for y in range(0,w):
- *             co = ColorNames.findNearestWebColorName(image[x,y])             # <<<<<<<<<<<<<<
- *             hex = ColorNames.WebColorMap[co]
+ *             co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)             # <<<<<<<<<<<<<<
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]
  */
       __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_ColorNames); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 17, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_findNearestWebColorName); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 17, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_findNearestColorName); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 17, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_10.data = __pyx_v_image.data;
@@ -2760,7 +2762,13 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
       __PYX_XDEC_MEMVIEW(&__pyx_t_10, 1);
       __pyx_t_10.memview = NULL;
       __pyx_t_10.data = NULL;
+      __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_ColorNames); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_2);
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_Color); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 17, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_4);
+      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_2 = NULL;
+      __pyx_t_11 = 0;
       if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
         __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_5);
         if (likely(__pyx_t_2)) {
@@ -2768,57 +2776,59 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
           __Pyx_INCREF(__pyx_t_2);
           __Pyx_INCREF(function);
           __Pyx_DECREF_SET(__pyx_t_5, function);
+          __pyx_t_11 = 1;
         }
       }
-      if (!__pyx_t_2) {
-        __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+      #if CYTHON_FAST_PYCALL
+      if (PyFunction_Check(__pyx_t_5)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_t_3, __pyx_t_4};
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
         __Pyx_GOTREF(__pyx_t_1);
-      } else {
-        #if CYTHON_FAST_PYCALL
-        if (PyFunction_Check(__pyx_t_5)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_t_3};
-          __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-          __Pyx_GOTREF(__pyx_t_1);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        } else
-        #endif
-        #if CYTHON_FAST_PYCCALL
-        if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_2, __pyx_t_3};
-          __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-          __Pyx_GOTREF(__pyx_t_1);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        } else
-        #endif
-        {
-          __pyx_t_4 = PyTuple_New(1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 17, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_4);
-          __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2); __pyx_t_2 = NULL;
-          __Pyx_GIVEREF(__pyx_t_3);
-          PyTuple_SET_ITEM(__pyx_t_4, 0+1, __pyx_t_3);
-          __pyx_t_3 = 0;
-          __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_1);
-          __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      } else
+      #endif
+      #if CYTHON_FAST_PYCCALL
+      if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
+        PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_t_3, __pyx_t_4};
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_11, 2+__pyx_t_11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+        __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+      } else
+      #endif
+      {
+        __pyx_t_12 = PyTuple_New(2+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 17, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_12);
+        if (__pyx_t_2) {
+          __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_2); __pyx_t_2 = NULL;
         }
+        __Pyx_GIVEREF(__pyx_t_3);
+        PyTuple_SET_ITEM(__pyx_t_12, 0+__pyx_t_11, __pyx_t_3);
+        __Pyx_GIVEREF(__pyx_t_4);
+        PyTuple_SET_ITEM(__pyx_t_12, 1+__pyx_t_11, __pyx_t_4);
+        __pyx_t_3 = 0;
+        __pyx_t_4 = 0;
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 17, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_1);
+        __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_XDECREF_SET(__pyx_v_co, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "ch_cl.pyx":18
+      /* "cython_code/ch_cl.pyx":18
  *         for y in range(0,w):
- *             co = ColorNames.findNearestWebColorName(image[x,y])
- *             hex = ColorNames.WebColorMap[co]             # <<<<<<<<<<<<<<
+ *             co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)
+ *             hex = ColorNames.Color[co]             # <<<<<<<<<<<<<<
  *             hex = hex[1:]
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
  */
       __pyx_t_1 = __Pyx_GetModuleGlobalName(__pyx_n_s_ColorNames); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_WebColorMap); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 18, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_Color); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 18, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_1 = PyObject_GetItem(__pyx_t_5, __pyx_v_co); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
@@ -2829,9 +2839,9 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
       __Pyx_GIVEREF(__pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "ch_cl.pyx":19
- *             co = ColorNames.findNearestWebColorName(image[x,y])
- *             hex = ColorNames.WebColorMap[co]
+      /* "cython_code/ch_cl.pyx":19
+ *             co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]             # <<<<<<<<<<<<<<
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
@@ -2843,14 +2853,14 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
       __Pyx_GIVEREF(__pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "ch_cl.pyx":20
- *             hex = ColorNames.WebColorMap[co]
+      /* "cython_code/ch_cl.pyx":20
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))             # <<<<<<<<<<<<<<
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
  *     return narr
  */
-      __pyx_t_1 = __pyx_pf_5ch_cl_9newcolors_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+      __pyx_t_1 = __pyx_pf_11cython_code_5ch_cl_9newcolors_genexpr(((PyObject*)__pyx_cur_scope)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __pyx_t_5 = PySequence_Tuple(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 20, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -2858,11 +2868,12 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
       __Pyx_XDECREF_SET(__pyx_v_rgb, ((PyObject*)__pyx_t_5));
       __pyx_t_5 = 0;
 
-      /* "ch_cl.pyx":21
+      /* "cython_code/ch_cl.pyx":21
  *             hex = hex[1:]
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]             # <<<<<<<<<<<<<<
  *     return narr
+ * 
  */
       __pyx_t_5 = PyList_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 21, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -2883,17 +2894,18 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
     }
   }
 
-  /* "ch_cl.pyx":22
+  /* "cython_code/ch_cl.pyx":22
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
  *     return narr             # <<<<<<<<<<<<<<
+ * 
  */
   __Pyx_XDECREF(__pyx_r);
   __Pyx_INCREF(__pyx_v_narr);
   __pyx_r = __pyx_v_narr;
   goto __pyx_L0;
 
-  /* "ch_cl.pyx":8
+  /* "cython_code/ch_cl.pyx":8
  * 
  * @cython.boundscheck(False)
  * def newcolors(unsigned char [:,:,:] image):             # <<<<<<<<<<<<<<
@@ -2909,7 +2921,8 @@ __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_10, 1, (PyObject *(*)(char *)) __
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XDEC_MEMVIEW(&__pyx_t_10, 1);
-  __Pyx_AddTraceback("ch_cl.newcolors", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_XDECREF(__pyx_t_12);
+  __Pyx_AddTraceback("cython_code.ch_cl.newcolors", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_image, 1);
@@ -18246,14 +18259,14 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-static struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *__pyx_freelist_5ch_cl___pyx_scope_struct__newcolors[8];
-static int __pyx_freecount_5ch_cl___pyx_scope_struct__newcolors = 0;
+static struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *__pyx_freelist_11cython_code_5ch_cl___pyx_scope_struct__newcolors[8];
+static int __pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct__newcolors = 0;
 
-static PyObject *__pyx_tp_new_5ch_cl___pyx_scope_struct__newcolors(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct__newcolors(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5ch_cl___pyx_scope_struct__newcolors > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors)))) {
-    o = (PyObject*)__pyx_freelist_5ch_cl___pyx_scope_struct__newcolors[--__pyx_freecount_5ch_cl___pyx_scope_struct__newcolors];
-    memset(o, 0, sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct__newcolors > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors)))) {
+    o = (PyObject*)__pyx_freelist_11cython_code_5ch_cl___pyx_scope_struct__newcolors[--__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct__newcolors];
+    memset(o, 0, sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -18263,41 +18276,41 @@ static PyObject *__pyx_tp_new_5ch_cl___pyx_scope_struct__newcolors(PyTypeObject 
   return o;
 }
 
-static void __pyx_tp_dealloc_5ch_cl___pyx_scope_struct__newcolors(PyObject *o) {
-  struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *p = (struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)o;
+static void __pyx_tp_dealloc_11cython_code_5ch_cl___pyx_scope_struct__newcolors(PyObject *o) {
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *p = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_v_hex);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5ch_cl___pyx_scope_struct__newcolors < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors)))) {
-    __pyx_freelist_5ch_cl___pyx_scope_struct__newcolors[__pyx_freecount_5ch_cl___pyx_scope_struct__newcolors++] = ((struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct__newcolors < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors)))) {
+    __pyx_freelist_11cython_code_5ch_cl___pyx_scope_struct__newcolors[__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct__newcolors++] = ((struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5ch_cl___pyx_scope_struct__newcolors(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11cython_code_5ch_cl___pyx_scope_struct__newcolors(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *p = (struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)o;
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *p = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)o;
   if (p->__pyx_v_hex) {
     e = (*v)(p->__pyx_v_hex, a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_5ch_cl___pyx_scope_struct__newcolors(PyObject *o) {
+static int __pyx_tp_clear_11cython_code_5ch_cl___pyx_scope_struct__newcolors(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *p = (struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)o;
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *p = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)o;
   tmp = ((PyObject*)p->__pyx_v_hex);
   p->__pyx_v_hex = Py_None; Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct__newcolors = {
+static PyTypeObject __pyx_type_11cython_code_5ch_cl___pyx_scope_struct__newcolors = {
   PyVarObject_HEAD_INIT(0, 0)
-  "ch_cl.__pyx_scope_struct__newcolors", /*tp_name*/
-  sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors), /*tp_basicsize*/
+  "cython_code.ch_cl.__pyx_scope_struct__newcolors", /*tp_name*/
+  sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5ch_cl___pyx_scope_struct__newcolors, /*tp_dealloc*/
+  __pyx_tp_dealloc_11cython_code_5ch_cl___pyx_scope_struct__newcolors, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -18319,8 +18332,8 @@ static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct__newcolors = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5ch_cl___pyx_scope_struct__newcolors, /*tp_traverse*/
-  __pyx_tp_clear_5ch_cl___pyx_scope_struct__newcolors, /*tp_clear*/
+  __pyx_tp_traverse_11cython_code_5ch_cl___pyx_scope_struct__newcolors, /*tp_traverse*/
+  __pyx_tp_clear_11cython_code_5ch_cl___pyx_scope_struct__newcolors, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -18335,7 +18348,7 @@ static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct__newcolors = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5ch_cl___pyx_scope_struct__newcolors, /*tp_new*/
+  __pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct__newcolors, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -18350,14 +18363,14 @@ static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct__newcolors = {
   #endif
 };
 
-static struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *__pyx_freelist_5ch_cl___pyx_scope_struct_1_genexpr[8];
-static int __pyx_freecount_5ch_cl___pyx_scope_struct_1_genexpr = 0;
+static struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *__pyx_freelist_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr[8];
+static int __pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr = 0;
 
-static PyObject *__pyx_tp_new_5ch_cl___pyx_scope_struct_1_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+static PyObject *__pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
   PyObject *o;
-  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_5ch_cl___pyx_scope_struct_1_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr)))) {
-    o = (PyObject*)__pyx_freelist_5ch_cl___pyx_scope_struct_1_genexpr[--__pyx_freecount_5ch_cl___pyx_scope_struct_1_genexpr];
-    memset(o, 0, sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr));
+  if (CYTHON_COMPILING_IN_CPYTHON && likely((__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr > 0) & (t->tp_basicsize == sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr)))) {
+    o = (PyObject*)__pyx_freelist_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr[--__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr];
+    memset(o, 0, sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr));
     (void) PyObject_INIT(o, t);
     PyObject_GC_Track(o);
   } else {
@@ -18367,22 +18380,22 @@ static PyObject *__pyx_tp_new_5ch_cl___pyx_scope_struct_1_genexpr(PyTypeObject *
   return o;
 }
 
-static void __pyx_tp_dealloc_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o) {
-  struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *p = (struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)o;
+static void __pyx_tp_dealloc_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o) {
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *p = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)o;
   PyObject_GC_UnTrack(o);
   Py_CLEAR(p->__pyx_outer_scope);
   Py_CLEAR(p->__pyx_v_i);
   Py_CLEAR(p->__pyx_t_0);
-  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_5ch_cl___pyx_scope_struct_1_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr)))) {
-    __pyx_freelist_5ch_cl___pyx_scope_struct_1_genexpr[__pyx_freecount_5ch_cl___pyx_scope_struct_1_genexpr++] = ((struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)o);
+  if (CYTHON_COMPILING_IN_CPYTHON && ((__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr < 8) & (Py_TYPE(o)->tp_basicsize == sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr)))) {
+    __pyx_freelist_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr[__pyx_freecount_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr++] = ((struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)o);
   } else {
     (*Py_TYPE(o)->tp_free)(o);
   }
 }
 
-static int __pyx_tp_traverse_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *p = (struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)o;
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *p = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)o;
   if (p->__pyx_outer_scope) {
     e = (*v)(((PyObject *)p->__pyx_outer_scope), a); if (e) return e;
   }
@@ -18395,11 +18408,11 @@ static int __pyx_tp_traverse_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o, vi
   return 0;
 }
 
-static int __pyx_tp_clear_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o) {
+static int __pyx_tp_clear_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *p = (struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr *)o;
+  struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *p = (struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr *)o;
   tmp = ((PyObject*)p->__pyx_outer_scope);
-  p->__pyx_outer_scope = ((struct __pyx_obj_5ch_cl___pyx_scope_struct__newcolors *)Py_None); Py_INCREF(Py_None);
+  p->__pyx_outer_scope = ((struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct__newcolors *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   tmp = ((PyObject*)p->__pyx_v_i);
   p->__pyx_v_i = Py_None; Py_INCREF(Py_None);
@@ -18410,12 +18423,12 @@ static int __pyx_tp_clear_5ch_cl___pyx_scope_struct_1_genexpr(PyObject *o) {
   return 0;
 }
 
-static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct_1_genexpr = {
+static PyTypeObject __pyx_type_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr = {
   PyVarObject_HEAD_INIT(0, 0)
-  "ch_cl.__pyx_scope_struct_1_genexpr", /*tp_name*/
-  sizeof(struct __pyx_obj_5ch_cl___pyx_scope_struct_1_genexpr), /*tp_basicsize*/
+  "cython_code.ch_cl.__pyx_scope_struct_1_genexpr", /*tp_name*/
+  sizeof(struct __pyx_obj_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_dealloc*/
+  __pyx_tp_dealloc_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -18437,8 +18450,8 @@ static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct_1_genexpr = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_traverse*/
-  __pyx_tp_clear_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_clear*/
+  __pyx_tp_traverse_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_traverse*/
+  __pyx_tp_clear_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
@@ -18453,7 +18466,7 @@ static PyTypeObject __pyx_type_5ch_cl___pyx_scope_struct_1_genexpr = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_new*/
+  __pyx_tp_new_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -18590,7 +18603,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "ch_cl.array", /*tp_name*/
+  "cython_code.ch_cl.array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -18698,7 +18711,7 @@ static PyMethodDef __pyx_methods_Enum[] = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "ch_cl.Enum", /*tp_name*/
+  "cython_code.ch_cl.Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -18948,7 +18961,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "ch_cl.memoryview", /*tp_name*/
+  "cython_code.ch_cl.memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -19075,7 +19088,7 @@ static struct PyGetSetDef __pyx_getsets__memoryviewslice[] = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "ch_cl._memoryviewslice", /*tp_name*/
+  "cython_code.ch_cl._memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -19166,6 +19179,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_Buffer_view_does_not_expose_stri, __pyx_k_Buffer_view_does_not_expose_stri, sizeof(__pyx_k_Buffer_view_does_not_expose_stri), 0, 0, 1, 0},
   {&__pyx_kp_s_Can_only_create_a_buffer_that_is, __pyx_k_Can_only_create_a_buffer_that_is, sizeof(__pyx_k_Can_only_create_a_buffer_that_is), 0, 0, 1, 0},
   {&__pyx_kp_s_Cannot_index_with_type_s, __pyx_k_Cannot_index_with_type_s, sizeof(__pyx_k_Cannot_index_with_type_s), 0, 0, 1, 0},
+  {&__pyx_n_s_Color, __pyx_k_Color, sizeof(__pyx_k_Color), 0, 0, 1, 1},
   {&__pyx_n_s_ColorNames, __pyx_k_ColorNames, sizeof(__pyx_k_ColorNames), 0, 0, 1, 1},
   {&__pyx_n_s_Ellipsis, __pyx_k_Ellipsis, sizeof(__pyx_k_Ellipsis), 0, 0, 1, 1},
   {&__pyx_kp_s_Empty_shape_tuple_for_cython_arr, __pyx_k_Empty_shape_tuple_for_cython_arr, sizeof(__pyx_k_Empty_shape_tuple_for_cython_arr), 0, 0, 1, 0},
@@ -19189,14 +19203,12 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_Unable_to_convert_item_to_object, __pyx_k_Unable_to_convert_item_to_object, sizeof(__pyx_k_Unable_to_convert_item_to_object), 0, 0, 1, 0},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_View_MemoryView, __pyx_k_View_MemoryView, sizeof(__pyx_k_View_MemoryView), 0, 0, 1, 1},
-  {&__pyx_n_s_WebColorMap, __pyx_k_WebColorMap, sizeof(__pyx_k_WebColorMap), 0, 0, 1, 1},
   {&__pyx_n_s_allocate_buffer, __pyx_k_allocate_buffer, sizeof(__pyx_k_allocate_buffer), 0, 0, 1, 1},
   {&__pyx_n_s_args, __pyx_k_args, sizeof(__pyx_k_args), 0, 0, 1, 1},
   {&__pyx_n_s_asarray, __pyx_k_asarray, sizeof(__pyx_k_asarray), 0, 0, 1, 1},
   {&__pyx_n_s_base, __pyx_k_base, sizeof(__pyx_k_base), 0, 0, 1, 1},
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
   {&__pyx_n_u_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 1, 0, 1},
-  {&__pyx_n_s_ch_cl, __pyx_k_ch_cl, sizeof(__pyx_k_ch_cl), 0, 0, 1, 1},
   {&__pyx_kp_s_ch_cl_pyx, __pyx_k_ch_cl_pyx, sizeof(__pyx_k_ch_cl_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_class, __pyx_k_class, sizeof(__pyx_k_class), 0, 0, 1, 1},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
@@ -19204,12 +19216,13 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_co, __pyx_k_co, sizeof(__pyx_k_co), 0, 0, 1, 1},
   {&__pyx_kp_s_contiguous_and_direct, __pyx_k_contiguous_and_direct, sizeof(__pyx_k_contiguous_and_direct), 0, 0, 1, 0},
   {&__pyx_kp_s_contiguous_and_indirect, __pyx_k_contiguous_and_indirect, sizeof(__pyx_k_contiguous_and_indirect), 0, 0, 1, 0},
+  {&__pyx_n_s_cython_code_ch_cl, __pyx_k_cython_code_ch_cl, sizeof(__pyx_k_cython_code_ch_cl), 0, 0, 1, 1},
   {&__pyx_n_s_dict, __pyx_k_dict, sizeof(__pyx_k_dict), 0, 0, 1, 1},
   {&__pyx_n_s_dtype_is_object, __pyx_k_dtype_is_object, sizeof(__pyx_k_dtype_is_object), 0, 0, 1, 1},
   {&__pyx_n_s_encode, __pyx_k_encode, sizeof(__pyx_k_encode), 0, 0, 1, 1},
   {&__pyx_n_s_enumerate, __pyx_k_enumerate, sizeof(__pyx_k_enumerate), 0, 0, 1, 1},
   {&__pyx_n_s_error, __pyx_k_error, sizeof(__pyx_k_error), 0, 0, 1, 1},
-  {&__pyx_n_s_findNearestWebColorName, __pyx_k_findNearestWebColorName, sizeof(__pyx_k_findNearestWebColorName), 0, 0, 1, 1},
+  {&__pyx_n_s_findNearestColorName, __pyx_k_findNearestColorName, sizeof(__pyx_k_findNearestColorName), 0, 0, 1, 1},
   {&__pyx_n_s_flags, __pyx_k_flags, sizeof(__pyx_k_flags), 0, 0, 1, 1},
   {&__pyx_n_s_format, __pyx_k_format, sizeof(__pyx_k_format), 0, 0, 1, 1},
   {&__pyx_n_s_fortran, __pyx_k_fortran, sizeof(__pyx_k_fortran), 0, 0, 1, 1},
@@ -19303,8 +19316,8 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "ch_cl.pyx":20
- *             hex = ColorNames.WebColorMap[co]
+  /* "cython_code/ch_cl.pyx":20
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))             # <<<<<<<<<<<<<<
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
@@ -19314,9 +19327,9 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "ch_cl.pyx":19
- *             co = ColorNames.findNearestWebColorName(image[x,y])
- *             hex = ColorNames.WebColorMap[co]
+  /* "cython_code/ch_cl.pyx":19
+ *             co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)
+ *             hex = ColorNames.Color[co]
  *             hex = hex[1:]             # <<<<<<<<<<<<<<
  *             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
  *             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
@@ -19625,7 +19638,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
 
-  /* "ch_cl.pyx":8
+  /* "cython_code/ch_cl.pyx":8
  * 
  * @cython.boundscheck(False)
  * def newcolors(unsigned char [:,:,:] image):             # <<<<<<<<<<<<<<
@@ -19709,14 +19722,14 @@ static int __Pyx_InitCachedConstants(void) {
 }
 
 static int __Pyx_InitGlobals(void) {
-  if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
-  __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_4 = PyInt_FromLong(4); if (unlikely(!__pyx_int_4)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_16 = PyInt_FromLong(16); if (unlikely(!__pyx_int_16)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_184977713 = PyInt_FromLong(184977713L); if (unlikely(!__pyx_int_184977713)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_neg_1 = PyInt_FromLong(-1); if (unlikely(!__pyx_int_neg_1)) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_InitStrings(__pyx_string_tab) < 0) __PYX_ERR(0, 2, __pyx_L1_error);
+  __pyx_int_0 = PyInt_FromLong(0); if (unlikely(!__pyx_int_0)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_int_4 = PyInt_FromLong(4); if (unlikely(!__pyx_int_4)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_int_16 = PyInt_FromLong(16); if (unlikely(!__pyx_int_16)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_int_184977713 = PyInt_FromLong(184977713L); if (unlikely(!__pyx_int_184977713)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_int_neg_1 = PyInt_FromLong(-1); if (unlikely(!__pyx_int_neg_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -19744,24 +19757,24 @@ PyMODINIT_FUNC PyInit_ch_cl(void)
   }
   #endif
   __Pyx_RefNannySetupContext("PyMODINIT_FUNC PyInit_ch_cl(void)", 0);
-  if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_empty_unicode = PyUnicode_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_unicode)) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_empty_tuple = PyTuple_New(0); if (unlikely(!__pyx_empty_tuple)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_empty_bytes = PyBytes_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_bytes)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_empty_unicode = PyUnicode_FromStringAndSize("", 0); if (unlikely(!__pyx_empty_unicode)) __PYX_ERR(0, 2, __pyx_L1_error)
   #ifdef __Pyx_CyFunction_USED
-  if (__pyx_CyFunction_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__pyx_CyFunction_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
   #ifdef __Pyx_FusedFunction_USED
-  if (__pyx_FusedFunction_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__pyx_FusedFunction_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
   #ifdef __Pyx_Coroutine_USED
-  if (__pyx_Coroutine_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__pyx_Coroutine_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
   #ifdef __Pyx_Generator_USED
-  if (__pyx_Generator_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__pyx_Generator_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
   #ifdef __Pyx_StopAsyncIteration_USED
-  if (__pyx_StopAsyncIteration_init() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__pyx_StopAsyncIteration_init() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
   /*--- Library function declarations ---*/
   /*--- Threads initialization code ---*/
@@ -19776,35 +19789,35 @@ PyMODINIT_FUNC PyInit_ch_cl(void)
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
-  if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_d = PyModule_GetDict(__pyx_m); if (unlikely(!__pyx_d)) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (unlikely(!__pyx_m)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_d = PyModule_GetDict(__pyx_m); if (unlikely(!__pyx_d)) __PYX_ERR(0, 2, __pyx_L1_error)
   Py_INCREF(__pyx_d);
-  __pyx_b = PyImport_AddModule(__Pyx_BUILTIN_MODULE_NAME); if (unlikely(!__pyx_b)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_cython_runtime = PyImport_AddModule((char *) "cython_runtime"); if (unlikely(!__pyx_cython_runtime)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_b = PyImport_AddModule(__Pyx_BUILTIN_MODULE_NAME); if (unlikely(!__pyx_b)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_cython_runtime = PyImport_AddModule((char *) "cython_runtime"); if (unlikely(!__pyx_cython_runtime)) __PYX_ERR(0, 2, __pyx_L1_error)
   #if CYTHON_COMPILING_IN_PYPY
   Py_INCREF(__pyx_b);
   #endif
-  if (PyObject_SetAttrString(__pyx_m, "__builtins__", __pyx_b) < 0) __PYX_ERR(0, 1, __pyx_L1_error);
+  if (PyObject_SetAttrString(__pyx_m, "__builtins__", __pyx_b) < 0) __PYX_ERR(0, 2, __pyx_L1_error);
   /*--- Initialize various global constants etc. ---*/
-  if (__Pyx_InitGlobals() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_InitGlobals() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
-  if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_ch_cl) {
-    if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__pyx_module_is_main_cython_code__ch_cl) {
+    if (PyObject_SetAttrString(__pyx_m, "__name__", __pyx_n_s_main) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
-    PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "ch_cl")) {
-      if (unlikely(PyDict_SetItemString(modules, "ch_cl", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 2, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "cython_code.ch_cl")) {
+      if (unlikely(PyDict_SetItemString(modules, "cython_code.ch_cl", __pyx_m) < 0)) __PYX_ERR(0, 2, __pyx_L1_error)
     }
   }
   #endif
   /*--- Builtin init code ---*/
-  if (__Pyx_InitCachedBuiltins() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_InitCachedBuiltins() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   /*--- Constants init code ---*/
-  if (__Pyx_InitCachedConstants() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_InitCachedConstants() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   /*--- Global init code ---*/
   generic = Py_None; Py_INCREF(Py_None);
   strided = Py_None; Py_INCREF(Py_None);
@@ -19814,12 +19827,12 @@ PyMODINIT_FUNC PyInit_ch_cl(void)
   /*--- Variable export code ---*/
   /*--- Function export code ---*/
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_5ch_cl___pyx_scope_struct__newcolors) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
-  __pyx_type_5ch_cl___pyx_scope_struct__newcolors.tp_print = 0;
-  __pyx_ptype_5ch_cl___pyx_scope_struct__newcolors = &__pyx_type_5ch_cl___pyx_scope_struct__newcolors;
-  if (PyType_Ready(&__pyx_type_5ch_cl___pyx_scope_struct_1_genexpr) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
-  __pyx_type_5ch_cl___pyx_scope_struct_1_genexpr.tp_print = 0;
-  __pyx_ptype_5ch_cl___pyx_scope_struct_1_genexpr = &__pyx_type_5ch_cl___pyx_scope_struct_1_genexpr;
+  if (PyType_Ready(&__pyx_type_11cython_code_5ch_cl___pyx_scope_struct__newcolors) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_type_11cython_code_5ch_cl___pyx_scope_struct__newcolors.tp_print = 0;
+  __pyx_ptype_11cython_code_5ch_cl___pyx_scope_struct__newcolors = &__pyx_type_11cython_code_5ch_cl___pyx_scope_struct__newcolors;
+  if (PyType_Ready(&__pyx_type_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_type_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr.tp_print = 0;
+  __pyx_ptype_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr = &__pyx_type_11cython_code_5ch_cl___pyx_scope_struct_1_genexpr;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(2, 103, __pyx_L1_error)
@@ -19871,23 +19884,24 @@ PyMODINIT_FUNC PyInit_ch_cl(void)
   /*--- Function import code ---*/
   /*--- Execution code ---*/
   #if defined(__Pyx_Generator_USED) || defined(__Pyx_Coroutine_USED)
-  if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   #endif
 
-  /* "ch_cl.pyx":2
+  /* "cython_code/ch_cl.pyx":3
+ * 
  * import cython
  * import numpy as np             # <<<<<<<<<<<<<<
  * cimport numpy as np
- * 
+ * from rgb_find_nearest import ColorNames
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "ch_cl.pyx":5
+  /* "cython_code/ch_cl.pyx":5
+ * import numpy as np
  * cimport numpy as np
- * 
  * from rgb_find_nearest import ColorNames             # <<<<<<<<<<<<<<
  * 
  * @cython.boundscheck(False)
@@ -19906,26 +19920,27 @@ PyMODINIT_FUNC PyInit_ch_cl(void)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "ch_cl.pyx":8
+  /* "cython_code/ch_cl.pyx":8
  * 
  * @cython.boundscheck(False)
  * def newcolors(unsigned char [:,:,:] image):             # <<<<<<<<<<<<<<
  *     #it1 = np.nditer(img, flags=['multi_index'])
  *     cdef int x, y, w, h
  */
-  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_5ch_cl_1newcolors, NULL, __pyx_n_s_ch_cl); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
+  __pyx_t_2 = PyCFunction_NewEx(&__pyx_mdef_11cython_code_5ch_cl_1newcolors, NULL, __pyx_n_s_cython_code_ch_cl); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_newcolors, __pyx_t_2) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "ch_cl.pyx":1
+  /* "cython_code/ch_cl.pyx":2
+ * 
  * import cython             # <<<<<<<<<<<<<<
  * import numpy as np
  * cimport numpy as np
  */
-  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_t_2 = PyDict_New(); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "View.MemoryView":207
@@ -20089,11 +20104,11 @@ PyMODINIT_FUNC PyInit_ch_cl(void)
   __Pyx_XDECREF(__pyx_t_2);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init ch_cl", 0, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init cython_code.ch_cl", 0, __pyx_lineno, __pyx_filename);
     }
     Py_DECREF(__pyx_m); __pyx_m = 0;
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init ch_cl");
+    PyErr_SetString(PyExc_ImportError, "init cython_code.ch_cl");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

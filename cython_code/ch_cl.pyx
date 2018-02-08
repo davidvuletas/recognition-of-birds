@@ -1,7 +1,7 @@
+
 import cython
 import numpy as np
 cimport numpy as np
-
 from rgb_find_nearest import ColorNames
 
 @cython.boundscheck(False)
@@ -14,9 +14,10 @@ def newcolors(unsigned char [:,:,:] image):
     narr = np.asarray(image)
     for x in range(0,h):
         for y in range(0,w):
-            co = ColorNames.findNearestWebColorName(image[x,y])
-            hex = ColorNames.WebColorMap[co]
+            co = ColorNames.findNearestColorName(image[x,y],ColorNames.Color)
+            hex = ColorNames.Color[co]
             hex = hex[1:]
             rgb = tuple(int(hex[i:i + 2], 16) for i in (0, 2, 4))
             narr[x][y]=[rgb[0],rgb[1],rgb[2]]
     return narr
+
