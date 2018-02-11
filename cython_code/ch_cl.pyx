@@ -6,9 +6,7 @@ from rgb_find_nearest import ColorNames
 
 @cython.boundscheck(False)
 def newcolors(unsigned char [:,:,:] image):
-    #it1 = np.nditer(img, flags=['multi_index'])
     cdef int x, y, w, h
-    # grab the image dimensions
     h = image.shape[0]
     w = image.shape[1]
     narr = np.asarray(image)
