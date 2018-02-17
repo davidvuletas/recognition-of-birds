@@ -7,15 +7,10 @@ import pyximport
 from blocks import *
 from color_operations import remove_colors
 from cython_code.ch_cl import new_colors
-from utils import *
 from neural_network import predict
+from utils import *
 
 pyximport.install()
-
-
-def resize_picture(image):
-    return cv2.resize(image, (300, 200))
-
 
 if __name__ == '__main__':
     mainFolder = 'demo'

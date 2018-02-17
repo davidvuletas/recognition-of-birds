@@ -20,6 +20,9 @@ def find_contours(img):
     picture_contours = sorted(contours, key=cv2.contourArea)
     return picture_contours
 
+def resize_picture(image):
+    return cv2.resize(image, (300, 200))
+
 
 def average(num_of_colors_in_blocks, colors_for_remove):
     sum_of_colors = 0
