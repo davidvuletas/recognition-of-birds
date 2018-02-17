@@ -41,14 +41,22 @@ def get_blocks(side):
     return [b1, b2, b3, b4, b5, b6, b7, b8]
 
 
-def getAllColorsFromBlocks(all_blocks):
+def divide_margins(img, h, w):
+    top = img[0:int(h / 8), int(w / 8):7 * int(w / 8)]
+    left = img[0:h, 0:int(w / 8)]
+    down = img[7 * int(h / 8):, int(w / 8):7 * int(w / 8)]
+    right = img[0:h, 7 * int(w / 8):]
+    return top, left, right, down
+
+
+def get_all_colors_from_blocks(all_blocks):
     num_of_colors_in_blocks = {}
-    for segment in all_blocks:
-        for block in segment:
-            for c in block:
-                if str(c.tolist()) in num_of_colors_in_blocks.keys():
-                    num_of_colors_in_blocks[str(c.tolist())] += 1
+    for margin in all_blocks:
+        for block in margin:
+            for color in block:
+                if str(color.tolist()) in num_of_colors_in_blocks.keys():
+                    num_of_colors_in_blocks[str(color.tolist())] += 1
                 else:
-                    num_of_colors_in_blocks[str(c.tolist())] = 1
+                    num_of_colors_in_blocks[str(color.tolist())] = 1
     num_of_colors_in_blocks = sorted(num_of_colors_in_blocks.items(), key=operator.itemgetter(1), reverse=True)
     return num_of_colors_in_blocks
