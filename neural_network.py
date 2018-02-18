@@ -66,7 +66,7 @@ def load_images(path):
     for bird_type in os.listdir(path):
         for pic in os.listdir(path + '//' + bird_type):
             bird = cv2.imread(path + '//' + bird_type + '//' + pic)
-            birds.append(cv2.resize(bird, (200, 200)))
+            birds.append(cv2.resize(bird, (227, 227)))
             types.append(bird_type)
 
     birds = np.asarray(birds)
@@ -81,6 +81,6 @@ def predict(trained_network):
     encoder = LabelEncoder()
     encoder.fit(test_y)
     encoded_y_test = encoder.transform(test_y)
-    np_utils.to_categorical(encoded_y_test)
+    test_y = np_utils.to_categorical(encoded_y_test)
     predicted = np.rint(model.predict(test_x))
     print('Accuracy: ', accuracy_score(test_y, predicted))
